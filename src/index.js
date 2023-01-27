@@ -4,8 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
 ReactDOM.render(
-  // 1. App 컴포넌트를 Browser 로 감싸서
-  // App 안에서 라우터 기능을 활용 하도록 함.
   <BrowserRouter>
     <App />
   </BrowserRouter>,
