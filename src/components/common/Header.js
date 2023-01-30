@@ -6,10 +6,10 @@ import { Link, NavLink } from "react-router-dom";
   : to="uri" props 는 필수
 */
 
-const Header = () => {
+const Header = (props) => {
   const active = { color: "hotpink" };
   return (
-    <header>
+    <header className={props.type}>
       <div className="inner">
         <h1>
           <Link to="/">Logo</Link>
