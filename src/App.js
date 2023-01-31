@@ -27,7 +27,7 @@ function App() {
         {/* 라우터에 따라서 header의 css 를 달리하겠다. */}
         {/* 중첩되는 header 에 대한 처리가 필요하다. */}
         {/* 컴포넌트를 출력한느 3번째 방법 */}
-        {/* <Header type={"sub"} */}
+        {/* <Header type={"sub"}/> */}
         <Route path="/" render={() => <Header type={"sub"} />} />
       </Switch>
 

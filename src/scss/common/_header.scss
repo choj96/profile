@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  background-color: rgb(175, 243, 15);
+  background-color: rgb(170, 224, 44);
   .inner {
     position: relative;
     width: 1180px;
@@ -47,8 +47,10 @@ header {
     z-index: 9;
     background: transparent;
   }
-  // tablet
 }
+
+
+// tablet
 @media screen and (max-width: $tablet) {
   header {
     .inner {
