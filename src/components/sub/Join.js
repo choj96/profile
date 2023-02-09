@@ -177,6 +177,12 @@ const Join = () => {
     return errs;
   };
 
+  // 데이터 초기화
+  const handleReset = (e) => {
+    setVal(initVal);
+    setErr({});
+  };
+
   // 디버깅용
   useEffect(() => {
     console.log(val);
@@ -199,6 +205,7 @@ const Join = () => {
   // 에러 및 유효성 검사 결과 한개의 객체로 관리
   return (
     <Layout title={"Join"}>
+      <input type="file" />
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend>회원 가입</legend>
@@ -440,7 +447,7 @@ const Join = () => {
               <tr>
                 <th colSpan="2">
                   {/* <button type="button">전송</button> */}
-                  <input type="reset" value="RESET" />
+                  <input type="reset" value="RESET" onClick={handleReset} />
                   <input type="submit" value="SUBMIT" />
                 </th>
               </tr>
